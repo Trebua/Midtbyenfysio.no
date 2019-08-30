@@ -1,10 +1,12 @@
 Footer - CHECK
 Instagram widget - CHECK
 Svarmail eller mer data i beskjed når man har bestilt time
-Fikse person-boksene - CHECK tja
+Fikse person-boksene - CHECK
 Om oss - CHECK
 Infokapsler osv - CHECK
 Velge behandler
 Sitat begge sider av blockquote
 Nettlesertesting
 Lighthousetesting
+favicon
+shadow webkit
