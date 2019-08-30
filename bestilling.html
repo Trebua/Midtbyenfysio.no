@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <title>Bestilling | Midtbyen fysioterapi</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="js/loadIncludes.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="headerContainer"></div>
+    <script type="text/javascript">
+      loadHeader();
+    </script>
+    <div
+      id="thankyou_message"
+      style="display: none;"
+      class="normalMargin content"
+    >
+      <h1>Bestilling sendt!</h1>
+      <p>
+        Husk at bestillingen ikke er bekreftet før vi svarer på forespørselen
+        din gjennom mail.
+      </p>
+    </div>
+    <div id="content-dissappear" class="content">
+      <div class="formContainer">
+        <div id="orderInfo">
+          <h1>Bestilling</h1>
+          <p>
+            Hvis du bestiller time gjennom bestillingsskjemaet vil vi kontakte
+            deg for å svare på forespørselen så fort vi kan.
+          </p>
+          <p>
+            Du kan også bestille time ved å kontakte oss gjennom mail eller
+            telefon.
+          </p>
+        </div>
+        <form
+          id="gform"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbxFWvMoIZ3bTgzT_rTAwraWQ1PaZbH6OuV7bujHEP2lIx-xfHMH/exec"
+        >
+          <h2>Timebestilling</h2>
+          <p>Ikke del senstive personopplysninger.</p>
+          <p>
+            Timer som ikke avbestilles innen 24 timer før avtalt tid, må betales
+            i sin helhet.
+          </p>
+          <div class="inputGroup fullWidthInput">
+            <label for="name">Navn*</label>
+            <input
+              name="name"
+              id="name"
+              type="text"
+              placeholder="Fullt navn"
+              maxlength="80"
+            />
+          </div>
+          <div class="inputRow">
+            <div class="inputGroup">
+              <label for="tlf">Telefonnummer*</label>
+              <input
+                name="tlf"
+                id="tlf"
+                type="text"
+                placeholder="Telefonnummer"
+                maxlength="20"
+              />
+            </div>
+            <div class="inputGroup">
+              <label for="email">E-post*</label>
+              <input
+                name="email"
+                id="email"
+                type="text"
+                placeholder="E-post"
+                maxlength="80"
+              />
+            </div>
+          </div>
+          <div class="inputRow">
+            <div class="inputGroup">
+              <label for="department">Avdeling*</label>
+              <select name="department" id="department">
+                <option disabled selected value="" class="placeholderOption"
+                  >Velg avdeling</option
+                >
+                <option value="Kristiansund">Kristiansund</option>
+                <option value="Averøya">Averøya</option>
+              </select>
+            </div>
+            <div class="inputGroup">
+              <label for="treatment">Behandling*</label>
+              <select name="treatment" id="treatment">
+                <option disabled selected value="" class="placeholderOption"
+                  >Fysioterapeut eller kiropraktor</option
+                >
+                <option value="Fysioterapi">Fysioterapeut</option>
+                <option value="Kiropraktor">Kiropraktor</option>
+              </select>
+            </div>
+          </div>
+          <div class="inputRow">
+            <div class="inputGroup">
+              <label for="date">Ønsket dato*</label>
+              <input
+                type="text"
+                name="date"
+                id="date"
+                placeholder="dd/mm/åå"
+                readonly="true"
+              />
+            </div>
+            <div class="inputGroup">
+              <label for="time">Ønsket tid</label>
+              <input
+                type="text"
+                name="time"
+                id="time"
+                placeholder="tt:mm"
+                maxlength="30"
+              />
+            </div>
+          </div>
+          <div class="inputGroup fullWidthInput">
+            <label for="info" id="infoLabel">Annen informasjon:</label>
+            <textarea
+              name="info"
+              id="info"
+              placeholder="For eksempel hvilken behandler du vil ha."
+              maxlength="600"
+            ></textarea>
+          </div>
+          <button class="cta" id="orderButton" type="submit">
+            Bestill time
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer id="footer"></footer>
+    <script type="text/javascript">
+      loadFooter();
+    </script>
+    <script src="js/order.js"></script>
+  </body>
+</html>
