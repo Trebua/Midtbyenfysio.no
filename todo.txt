@@ -5,8 +5,8 @@ Svarmail eller mer data i beskjed når man har bestilt time - CHECK
 Fikse person-boksene - CHECK
 Om oss - CHECK
 Infokapsler osv - CHECK
-Nettlesertesting
-Lighthousetesting
+Nettlesertesting - CHECK
+Lighthousetesting - CHECK
 favicon - CHECK
 shadow webkit - CHECK
 
