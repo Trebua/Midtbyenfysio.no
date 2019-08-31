@@ -241,6 +241,11 @@ footer {
 
 /* index.html */
 
+iframe.snapwidget-widget {
+  height: auto !important;
+  min-height: 300px !important;
+}
+
 #topSection {
   background-image: url("img/other/storkaia.jpg");
   height: 550px;

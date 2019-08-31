@@ -3,10 +3,10 @@ function responsivegram() {
   var instagramFeed;
   if (screenWidth > 540) {
     instagramFeed =
-      '<iframe src="//lightwidget.com/widgets/f3559303e7615a5eb2aaed27349d898f.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>';
+      '<iframe src="https://snapwidget.com/embed/637752" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>';
   } else {
     instagramFeed =
-      '<iframe src="//lightwidget.com/widgets/7cd9469d99dd50de84ffa62eb69c2077.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>';
+      '<iframe src="https://snapwidget.com/embed/637769" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>';
   }
   document.getElementById("instagram-feed").innerHTML = instagramFeed;
 }

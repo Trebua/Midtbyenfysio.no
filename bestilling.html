@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nb">
   <head>
-    <title>Bestilling | Midtbyen fysioterapi</title>
+    <title>Bestilling | Midtbyen fysioterapi og kiropraktikk</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       rel="stylesheet"
@@ -13,6 +13,7 @@
     <script src="js/loadIncludes.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/logos/favicon.ico">
   </head>
   <body>
     <div id="headerContainer"></div>
@@ -24,6 +25,7 @@
       style="display: none;"
       class="normalMargin content">
       <h1>Bestilling sendt!</h1>
+      <p>Du vil få en bekreftelsesmail tilsendt til din e-post.</p>
       <p>
         Husk at bestillingen ikke er bekreftet før vi svarer på forespørselen
         din gjennom mail.
@@ -53,41 +55,44 @@
             i sin helhet.
           </p>
           <div class="inputGroup fullWidthInput">
-            <label for="name">Navn*</label>
+            <label for="Navn">Navn*</label>
             <input
-              name="name"
+              name="Navn"
               id="name"
               type="text"
               placeholder="Fullt navn"
               maxlength="80"
+              required
               />
           </div>
           <div class="inputRow">
             <div class="inputGroup">
-              <label for="tlf">Telefonnummer*</label>
+              <label for="Telefonnummer">Telefonnummer*</label>
               <input
-                name="tlf"
+                name="Telefonnummer"
                 id="tlf"
                 type="text"
                 placeholder="Telefonnummer"
                 maxlength="20"
+                required
                 />
             </div>
             <div class="inputGroup">
-              <label for="email">E-post*</label>
+              <label for="Epost">E-post*</label>
               <input
-                name="email"
+                name="Epost"
                 id="email"
-                type="text"
+                type="email"
                 placeholder="E-post"
                 maxlength="80"
+                required
                 />
             </div>
           </div>
           <div class="inputRow">
             <div class="inputGroup">
-              <label for="department">Avdeling*</label>
-              <select name="department" id="department">
+              <label for="Avdeling">Avdeling*</label>
+              <select name="Avdeling" id="department" required>
                 <option disabled selected value="" class="placeholderOption">Velg
                   avdeling</option>
                 <option value="Kristiansund">Kristiansund</option>
@@ -95,9 +100,10 @@
               </select>
             </div>
             <div class="inputGroup">
-              <label for="treatment">Behandling*</label>
-              <select name="treatment" id="treatment">
-                <option disabled selected value="" class="placeholderOption">Fysioterapeut
+              <label for="Behandling">Behandling*</label>
+              <select name="Behandling" id="treatment" required>
+                <option disabled selected value=""
+                  class="placeholderOption">Fysioterapeut
                   eller kiropraktor</option>
                 <option value="Fysioterapi">Fysioterapeut</option>
                 <option value="Kiropraktor">Kiropraktor</option>
@@ -106,20 +112,20 @@
           </div>
           <div class="inputRow">
             <div class="inputGroup">
-              <label for="date">Ønsket dato*</label>
+              <label for="Dato">Ønsket dato</label>
               <input
                 type="text"
-                name="date"
+                name="Dato"
                 id="date"
                 placeholder="dd/mm/åå"
                 readonly="true"
                 />
             </div>
             <div class="inputGroup">
-              <label for="time">Ønsket tid</label>
+              <label for="Tid">Ønsket tid</label>
               <input
                 type="text"
-                name="time"
+                name="Tid"
                 id="time"
                 placeholder="tt:mm"
                 maxlength="30"
@@ -127,9 +133,9 @@
             </div>
           </div>
           <div class="inputGroup fullWidthInput">
-            <label for="info" id="infoLabel">Annen informasjon:</label>
+            <label for="Annen informasjon" id="infoLabel">Annen informasjon:</label>
             <textarea
-              name="info"
+              name="Annen informasjon"
               id="info"
               placeholder="For eksempel hvilken behandler du vil ha."
               maxlength="600"></textarea>

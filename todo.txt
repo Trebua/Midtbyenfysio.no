@@ -1,12 +1,20 @@
+-----------Do:
 Footer - CHECK
 Instagram widget - CHECK
-Svarmail eller mer data i beskjed når man har bestilt time
+Svarmail eller mer data i beskjed når man har bestilt time - CHECK
 Fikse person-boksene - CHECK
 Om oss - CHECK
 Infokapsler osv - CHECK
-Velge behandler
-Sitat begge sider av blockquote
 Nettlesertesting
 Lighthousetesting
 favicon
 shadow webkit
+fjerne knapp når bestill er trykket
+
+-----------Maybe:
+Velge behandler
+Sitat begge sider av blockquote
+
+-----------Før publisering:
+Endre mails i google script
+Required på besitllingsfelter - CHECK
