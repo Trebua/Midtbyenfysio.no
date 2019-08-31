@@ -7,13 +7,13 @@ Om oss - CHECK
 Infokapsler osv - CHECK
 Nettlesertesting
 Lighthousetesting
-favicon
-shadow webkit
-fjerne knapp når bestill er trykket
+favicon - CHECK
+shadow webkit - CHECK
 
 -----------Maybe:
 Velge behandler
 Sitat begge sider av blockquote
+fjerne knapp når bestill er trykket
 
 -----------Før publisering:
 Endre mails i google script

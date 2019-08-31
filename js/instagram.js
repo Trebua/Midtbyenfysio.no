@@ -3,10 +3,10 @@ function responsivegram() {
   var instagramFeed;
   if (screenWidth > 540) {
     instagramFeed =
-      '<iframe src="https://snapwidget.com/embed/637752" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>';
+      '<iframe src="https://snapwidget.com/embed/637752" title="instagram feed" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>';
   } else {
     instagramFeed =
-      '<iframe src="https://snapwidget.com/embed/637769" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>';
+      '<iframe src="https://snapwidget.com/embed/637769" title="instagram feed" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>';
   }
   document.getElementById("instagram-feed").innerHTML = instagramFeed;
 }
