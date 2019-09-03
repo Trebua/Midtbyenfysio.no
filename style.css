@@ -15,6 +15,14 @@ address {
   font-style: normal;
 }
 
+.centerText {
+  text-align: center;
+}
+
+img {
+  border-radius: 5px;
+}
+
 /* includes/header.html */
 /*---------- Header ---------*/
 header {
@@ -340,15 +348,7 @@ iframe.snapwidget-widget {
 }
 
 #welcomeTextSection {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#c0f1ff),
-    to(#ffffff)
-  );
-  background-image: -o-linear-gradient(top, #c0f1ff, #ffffff);
-  background-image: linear-gradient(to bottom, #c0f1ff, #ffffff);
+  background-color: #f4feff;
   padding: 20px;
   margin: 0;
 }
@@ -398,12 +398,14 @@ section {
 
 #welcomeText {
   width: 58%;
-  margin: 0 auto 0px;
-  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: justify;
 }
 
 #welcomeText h1 {
   text-align: center;
+  margin-top: 0px;
 }
 
 #locations {
@@ -419,6 +421,7 @@ section {
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .location {
@@ -552,7 +555,7 @@ section {
 
 .person a {
   color: black;
-  background-color: #7cc8de;
+  background-color: #c5f2ff;
   display: block;
   width: 100%;
   height: 60px;
@@ -873,9 +876,7 @@ input#date {
   display: inline-block;
   background-color: #f4feff;
   border-radius: 5px;
-  box-shadow: 0px 0px 3px 0px rgb(141, 141, 141);
-  -webkit-box-shadow: 0px 0px 3px 0px rgb(141, 141, 141);
-  -moz-box-shadow: 0px 0px 3px 0px rgb(141, 141, 141);
+  border: 0.4px solid gray;
   margin: 5px;
 }
 
@@ -883,12 +884,42 @@ input#date {
   margin: 0;
 }
 
+#treatmentImages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#treatmentImages img {
+  width: 250px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  #treatmentImages {
+    justify-content: center;
+  }
+  #treatmentImages img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #treatmentImages img {
+    width: 120px;
+  }
+}
+
 /*---------- om_oss.html ----------*/
 
 #aboutMidtbyen img {
-  height: 130px;
+  width: 250px;
   float: right;
-  padding: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+#aboutPeople {
+  clear: right;
 }
 
 #aboutPeople h2 {
@@ -902,11 +933,10 @@ input#date {
 .aboutPerson {
   background-color: #f4feff;
   padding: 20px;
-  width: 90%;
   box-shadow: 0px 0px 5px 0px rgb(76, 76, 76);
   -webkit-box-shadow: 0px 0px 5px 0px rgb(76, 76, 76);
   -moz-box-shadow: 0px 0px 5px 0px rgb(76, 76, 76);
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px;
   margin-bottom: 30px;
 }
 
@@ -922,8 +952,8 @@ input#date {
 .aboutPerson img {
   max-width: 100%;
   float: left;
-  padding-right: 20px;
-  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 #aboutMidtbyen,
@@ -933,7 +963,7 @@ input#date {
 
 @media screen and (max-width: 550px) {
   .aboutPerson img {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
   .imgPlacer {
     width: 100%;
@@ -942,11 +972,11 @@ input#date {
     text-align: center;
   }
   .aboutPerson {
-    width: 80%;
+    width: 86%;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   #aboutMidtbyen img {
     width: 100%;
     height: auto;
