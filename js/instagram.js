@@ -1,7 +1,7 @@
 function responsivegram() {
   var screenWidth = getWidth();
   var instagramFeed;
-  if (screenWidth > 540) {
+  if (screenWidth > 900) {
     instagramFeed =
       '<iframe src="https://snapwidget.com/embed/637752" title="instagram feed" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>';
   } else {

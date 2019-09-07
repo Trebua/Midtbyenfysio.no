@@ -9,6 +9,7 @@ h4 {
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  margin-top: 60px;
 }
 
 address {
@@ -44,11 +45,15 @@ header {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 
 header a {
-  height: 90%;
+  height: 88%;
+  width: 0;
 }
 
 header img {
@@ -58,16 +63,13 @@ header img {
 
 .sticky {
   height: 60px !important;
-  position: fixed !important;
-  z-index: 1;
-  width: 100%;
   box-shadow: 0px 0px 5px 0px rgb(76, 76, 76);
   -webkit-box-shadow: 0px 0px 5px 0px rgb(76, 76, 76);
   -moz-box-shadow: 0px 0px 5px 0px rgb(76, 76, 76);
 }
 
-.sticky ~ .content {
-  padding-top: 90px;
+.content {
+  margin-top: 100px !important;
 }
 
 h1.headerTitle {
@@ -293,9 +295,34 @@ footer {
 
 /* index.html */
 
+/* Multiple media queries to make snapwidget fit nicely */
 iframe.snapwidget-widget {
   height: auto !important;
-  min-height: 300px !important;
+  min-height: 320px !important;
+}
+
+@media screen and (max-width: 900px) {
+  iframe.snapwidget-widget {
+    min-height: 800px !important;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  iframe.snapwidget-widget {
+    min-height: 600px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  iframe.snapwidget-widget {
+    min-height: 450px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  iframe.snapwidget-widget {
+    min-height: 350px !important;
+  }
 }
 
 #topSection {
@@ -624,7 +651,7 @@ input[type="submit"]:hover {
 
 form > p {
   font-weight: 500;
-  color: #001bb0;
+  color: #242d5f;
 }
 
 input,
@@ -706,6 +733,7 @@ div#content-dissappear {
 
 .formContainer {
   width: 70%;
+  min-width: 580px;
 }
 
 .inputGroup {
@@ -802,6 +830,7 @@ form > h2 {
   }
   .formContainer {
     width: 90%;
+    min-width: 0;
   }
   form {
     padding: 20px;
