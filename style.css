@@ -6,6 +6,10 @@ h4 {
   font-weight: normal;
 }
 
+.noMarginHeading {
+  margin-top: 0;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -70,7 +74,7 @@ header img {
 }
 
 .content {
-  margin-top: 100px !important;
+  margin-top: 120px !important;
 }
 
 h1.headerTitle {
@@ -328,6 +332,7 @@ iframe.snapwidget-widget {
 
 #topSection {
   background-color: #21d4fd;
+  background-image: -o-linear-gradient(71deg, #21d4fd 0%, #cbebf3 100%);
   background-image: linear-gradient(19deg, #21d4fd 0%, #cbebf3 100%);
 
   height: 550px;
@@ -403,17 +408,6 @@ blockquote {
   border-radius: 5px;
 }
 
-blockquote::before {
-  font-family: Times new roman;
-  content: "\201C";
-  color: #0c020b;
-  font-size: 4em;
-  position: absolute;
-  left: 20px;
-  top: -1px;
-  color: #13a4cd;
-}
-
 @media screen and (max-width: 620px) {
   blockquote {
     font-size: 24px;
@@ -428,7 +422,7 @@ section {
   width: 58%;
   margin: 0 auto;
   padding: 20px 0;
-  text-align: justify;
+  text-align: left;
 }
 
 #welcomeText h1 {
@@ -877,7 +871,7 @@ input#date {
 }
 
 #priser th {
-  background-color: #7cc8de;
+  background-color: #8cdef5;
   text-align: left;
 }
 
@@ -915,7 +909,10 @@ input#date {
 }
 
 #treatmentImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -926,6 +923,8 @@ input#date {
 
 @media screen and (max-width: 700px) {
   #treatmentImages {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   #treatmentImages img {
@@ -961,7 +960,7 @@ input#date {
 }
 
 .aboutPerson {
-  background-color: #dafcff;
+  background-color: #ebfdff;
   padding: 20px;
   box-shadow: 0px 0px 5px 0px rgb(76, 76, 76);
   -webkit-box-shadow: 0px 0px 5px 0px rgb(76, 76, 76);

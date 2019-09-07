@@ -1,20 +1,9 @@
------------Do:
-Footer - CHECK
-Instagram widget - CHECK
-Svarmail eller mer data i beskjed når man har bestilt time - CHECK
-Fikse person-boksene - CHECK
-Om oss - CHECK
-Infokapsler osv - CHECK
-Nettlesertesting - CHECK
-Lighthousetesting - CHECK
-favicon - CHECK
-shadow webkit - CHECK
+-------todo:
+- sitemap - CHECK
+- meta description
 
------------Maybe:
-Velge behandler
-Sitat begge sider av blockquote
-fjerne knapp når bestill er trykket
+
 
 -----------Før publisering:
 Endre mails i google script
-Required på besitllingsfelter - CHECK
+htaccess
