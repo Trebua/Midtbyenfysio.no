@@ -11,7 +11,7 @@ h4 {
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Quicksand", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   margin-top: 60px;
 }
@@ -132,6 +132,7 @@ a.headerHome:hover .headerImg {
   text-decoration: none;
   color: black;
   padding: 10px 5px;
+  font-weight: 400;
 }
 
 .burgerContainer {
@@ -195,7 +196,7 @@ ul.desktopNavList li {
 ul.desktopNavList li a {
   text-decoration: none;
   color: black;
-  font-weight: 350;
+  font-weight: 400;
 }
 
 ul.desktopNavList li a:hover {
@@ -259,6 +260,7 @@ footer {
 
 .footerPerson p {
   margin: 0;
+  font-weight: 500;
 }
 
 .footerPerson span {
@@ -415,7 +417,7 @@ blockquote {
 }
 
 section {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 #welcomeText {
@@ -513,12 +515,8 @@ section {
   flex-wrap: wrap;
 }
 
-#employees {
-  margin-bottom: 30px;
-}
-
 .person {
-  margin: 0 20px 70px;
+  margin: 10px 20px;
   width: 270px;
   background-color: #f4feff;
   display: -webkit-box;
@@ -617,7 +615,7 @@ section {
 
 #instagram-section {
   width: 90%;
-  margin: 50px auto;
+  margin: 60px auto;
 }
 
 /* Bestilling.html */
@@ -900,7 +898,6 @@ input#date {
   display: inline-block;
   background-color: #dafcff;
   border-radius: 5px;
-  border: 0.4px solid gray;
   margin: 5px;
 }
 
