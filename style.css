@@ -953,7 +953,7 @@ input#date {
 
 #treatmentImages img {
   width: 250px;
-  height: auto;
+  height: 333px;
   margin: 5px;
 }
 
@@ -965,12 +965,14 @@ input#date {
   }
   #treatmentImages img {
     width: 200px;
+    height: 267px;
   }
 }
 
 @media screen and (max-width: 400px) {
   #treatmentImages img {
     width: 120px;
+    height: 160px;
   }
 }
 
