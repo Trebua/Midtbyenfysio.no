@@ -8,3 +8,4 @@ RewriteEngine On
 RewriteCond %{HTTPS} =on
 RewriteCond %{HTTP_HOST} ^www\.
 RewriteRule ^(.*)$ https://midtbyenfysio.no/$1 [R,QSA,L]
+
