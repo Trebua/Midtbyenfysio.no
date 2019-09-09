@@ -4,7 +4,6 @@
     <title>Om oss | Midtbyen fysioterapi og kiropraktikk</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="js/loadIncludes.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -19,10 +18,40 @@
     />
   </head>
   <body>
-    <div id="headerContainer"></div>
-    <script type="text/javascript">
-      loadHeader();
-    </script>
+    <div id="headerContainer">
+      <script src="js/header.js"></script>
+      <header id="desktopHeader">
+        <a href="/"
+          ><img
+            id="logo"
+            src="img/logos/logo.png"
+            alt="Midtbyen Fysioterapi
+            logo"
+        /></a>
+        <nav class="desktopNav">
+          <ul class="desktopNavList">
+            <li><a href="/">HJEM</a></li>
+            <li><a href="bestilling.html">BESTILL TIME</a></li>
+            <li><a href="priser.html">PRISER</a></li>
+            <li><a href="om_oss.html">OM OSS</a></li>
+          </ul>
+        </nav>
+        <div class="burgerContainer" onclick="toggleMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </header>
+      <nav class="displayNone" id="mobileNav">
+        <ul class="mobileNavList">
+          <li><a href="/">HJEM</a></li>
+          <li><a href="bestilling.html">BESTILL TIME</a></li>
+          <li><a href="priser.html">PRISER</a></li>
+          <li><a href="om_oss.html">OM OSS</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <main class="content normalMargin">
       <h1 id="aboutHeading">Om oss</h1>
       <div id="aboutMidtbyen">
@@ -177,9 +206,44 @@
         </div>
       </div>
     </main>
-    <footer id="footer"></footer>
-    <script type="text/javascript">
-      loadFooter();
-    </script>
+    <footer id="footer">
+      <div id="footerPlacer">
+        <div id="socialIcons">
+          <a
+            href="https://www.instagram.com/midtbyenfysioterapi/"
+            aria-label="Midtbyens Instagram-konto"
+            ><img src="img/social/instagram.png" alt="Instagram-logo"
+          /></a>
+          <a
+            href="https://www.facebook.com/pg/MidtbyenfysioterapiogKiropraktikk/posts/"
+            aria-label="Midtbyens Facebook-konto"
+            ><img src="img/social/facebook.png" alt="Facebook-logo"
+          /></a>
+        </div>
+        <div id="footerContact">
+          <div class="footerPerson">
+            <p>Silje Aarnes Aubert</p>
+            <span>Fysioterapeut</span>
+            <span>940 30 727</span>
+            <span>silje@midtbyenfysio.no</span>
+          </div>
+          <div class="footerPerson">
+            <p>Eirik Rakstang Rundberg</p>
+            <span>Fysioterapeut</span>
+            <span>905 03 313</span>
+            <span>eirik@midtbyenfysio.no</span>
+          </div>
+          <div class="footerPerson">
+            <p>Morten Lillemork Råke</p>
+            <span>Kiropraktor</span>
+            <span>413 13 998</span>
+            <span>morten@midtbyenfysio.no</span>
+          </div>
+        </div>
+      </div>
+      <div id="bottomFooter">
+        <a href="personvern.html">Informasjonskapsler og personvern</a>
+      </div>
+    </footer>
   </body>
 </html>
