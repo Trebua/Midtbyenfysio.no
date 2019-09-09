@@ -1,9 +1,0 @@
--------todo:
-- sitemap - CHECK
-- meta description
-
-
-
------------Før publisering:
-Endre mails i google script
-htaccess
